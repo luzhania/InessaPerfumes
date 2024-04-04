@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: serif;
+}
+body{
+    background-image: url("/images/bg-01.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+nav{
+    container: flex;
+    flex-basis: 100vw;
+    height: 5%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header {
+    background-color: #fefefe;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    padding: 2%;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav ul li img {
+    max-width: 100px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.principalProduct{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-wrap: wrap;
+    margin: 5%;
+    flex-direction: column;
+}
+
+section{
+    flex-basis: 100vw;
+    height: 100vh;
+    padding: 5%;
+}
+
+.popularProduct1{
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.popularProduct2{
+    background-color: red;
+}
+.new{
+    background-color: green;
+}
+.shop{
+    background-color: yellow;
+}
+.categoryShop{
+    background-color: pink;
+}
+
+
