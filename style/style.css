@@ -1,52 +1,62 @@
-*{
+* {
     margin: 0;
 }
-h1, h2, h3, h4, h5, h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: serif;
 }
-body{
+
+body {
     background-image: url("/images/bg-01.jpg");
     background-size: cover;
     background-attachment: fixed;
     font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #fefefe;
+.navbar {
     display: flex;
-    justify-content: space-evenly;
-    flex-basis: 100vw;
-    height: 8%;
-}
-
-nav{
-    container: flex;
-    justify-content: space-evenly;
-    gap: 10px;
-}
-
-.nav-shop{
-    display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-
-}
-.nav-info{
-    display: flex;
-    justify-content: flex-end;
+    background-color: #fefefe;
+    padding: 2%;
 }
 
-nav ul {
+.navbar ul {
     list-style-type: none;
-    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li a {
-    display: block;
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar ul li a {
     color: black;
     text-decoration: none;
-    padding: 10px 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 550;
 }
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
 button {
     background-color: #000000;
     color: white;
@@ -54,7 +64,8 @@ button {
     padding: 10px 20px;
     cursor: pointer;
 }
-.principalProduct{
+
+.principalProduct {
     display: flex;
     justify-content: center;
     align-items: left;
@@ -63,28 +74,32 @@ button {
     flex-direction: column;
 }
 
-section{
+section {
     flex-basis: 100vw;
     height: 100vh;
     padding: 5%;
 }
 
-.popularProduct1{
+.popularProduct1 {
     background-color: #fefefe;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
 }
-.popularProduct2{
+
+.popularProduct2 {
     background-color: red;
 }
-.new{
+
+.new {
     background-color: green;
 }
-.shop{
+
+.shop {
     background-color: yellow;
 }
-.categoryShop{
+
+.categoryShop {
     background-color: pink;
 }

@@ -20,10 +20,15 @@ nav a{
     color: #777777;
 
 }
-.title-page{
+.title-section{
+    padding-top: 11vh;
+    padding-bottom: 11vh;
+}
+.page-title{
     font-size: 88px;
     font-family: "Cormorant Garamond", serif;
     font-weight: 500;
+
 }
 
 .article-container{
