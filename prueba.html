@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sección Responsiva con Flexbox y Media Queries</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    display: flex;
+    height: 100%;
+  }
+
+  .left-section, .right-section {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .left-section {
+    background-image: url('/images/bg-04.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .right-section {
+    background-color: #f0f0f0; /* Fondo de la sección derecha */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .overlay-image {
+    position: absolute;
+    width: 40%; /* 60% del tamaño del contenedor */
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .left-section, .right-section {
+      height: 50%;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <!-- imagen de fondo y superpuesta -->
+      <img src="/images/perfume-003.jpg" alt="Perfume" class="overlay-image">
+    </div>
+    <div class="right-section">
+      <!-- Contenido de la sección derecha -->
+      Contenido de la sección derecha
+    </div>
+  </div>
+</body>
+</html>
