@@ -5,66 +5,59 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sección Responsiva con Flexbox y Media Queries</title>
 <style>
-  body, html {
+body {
     margin: 0;
     padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
-  }
-
-  .container {
-    display: flex;
-    height: 100%;
-  }
-
-  .left-section, .right-section {
-    flex: 1;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .left-section {
-    background-image: url('/images/bg-04.jpg');
-    background-size: cover;
-    background-position: center;
-  }
-
-  .right-section {
-    background-color: #f0f0f0; /* Fondo de la sección derecha */
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+    height: 100vh;
+}
 
-  .overlay-image {
-    position: absolute;
-    width: 40%; /* 60% del tamaño del contenedor */
-    top: 50%;
-    left: 0%;
-    transform: translate(-50%, -50%);
-  }
+.container {
+    display: flex;
+}
 
-  @media screen and (max-width: 768px) {
-    .container {
-      flex-direction: column;
-    }
+.square {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    margin: 0 10px;
+}
 
-    .left-section, .right-section {
-      height: 50%;
-    }
-  }
+.square:nth-child(1) {
+    background-image: url('/images/bg-01.jpg');
+}
+
+.square:nth-child(2) {
+    background-image: url('imagen2.jpg');
+}
+
+.square:nth-child(3) {
+    background-image: url('imagen3.jpg');
+}
+
+.inner-rectangle {
+    width: 100px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    line-height: 50px;
+}
+
 </style>
 </head>
 <body>
   <div class="container">
-    <div class="left-section">
-      <!-- imagen de fondo y superpuesta -->
-      <img src="/images/perfume-003.jpg" alt="Perfume" class="overlay-image">
+    <div class="square">
+        <div class="inner-rectangle">Texto 1</div>
     </div>
-    <div class="right-section">
-      <!-- Contenido de la sección derecha -->
-      Contenido de la sección derecha
+    <div class="square">
+        <div class="inner-rectangle">Texto 2</div>
     </div>
-  </div>
+    <div class="square">
+        <div class="inner-rectangle">Texto 3</div>
+    </div>
+</div>
 </body>
 </html>
