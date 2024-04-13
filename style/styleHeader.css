@@ -4,6 +4,7 @@
     align-items: center;
     background-color: #fefefe;
     padding: 2%;
+    border-bottom: #f4f4f4 0.3px solid;
 }
 
 .navbar ul {

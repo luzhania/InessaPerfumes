@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Cormorant Garamond", serif;
+}
+p{
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #5B5B5B;
+    font-weight: 500;
+}
+h1{
+    font-size: 88px;
+    font-weight: 400;
+}
+h2{
+    font-size: 50px;
+    font-weight: 400;
+}
+h3{
+    font-size: 35px;
+    font-weight: 400;
+
+}
+h5{
+    font-size: 21px;
+    font-weight: 400;
+}
+h6{
+    font-size: 15px;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #5B5B5B;
+    font-weight: 500;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 100vw;
+    height: min-content;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.contact-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-bottom: black 0.3px solid;
+}
+.contact-info-form{
+    display: flex;
+    flex-direction: row;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    height: min-content;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    height: min-content;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+form label{
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #5b5b5b;
+}
+
+.section-form-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+input{
+    padding: 10px;
+    border: #dddddd 0.1px solid;
+}
+
+textarea{
+    padding: 10px;
+    border: #dddddd 0.1px solid;
+}
+
+button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+    .contact-info-form{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-info{
+        flex-basis: 100%;
+    }
+    .contact-form{
+        flex-basis: 100%;
+    }
+}
