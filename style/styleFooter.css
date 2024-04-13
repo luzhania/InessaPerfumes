@@ -1,0 +1,111 @@
+footer{
+    display: flex;
+    flex-basis: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color: #fefefe;
+    padding: 10%;
+}
+
+.aside-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 100%;
+    height: 100%;
+    gap: 13%;
+    align-items: baseline;
+    padding-bottom: 10%;
+}
+.aside{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: space-between;
+    /* gap: 30px; */
+}
+
+aside ul{
+    list-style-type: none;
+    padding-left: 0px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}
+
+aside p{
+    font-weight: 500;
+    color: #fefefe;
+}
+aside address{
+    font-family: "Poppins", sans-serif;
+    color: #fefefe;
+    font-weight: 400;
+}
+aside a{
+    text-decoration: none;
+    color: #fefefe;
+    font-weight: 400;
+}
+aside h5{
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.copyright{
+    display: flex;
+    flex-basis: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.68);
+    padding-top: 5%;
+    border-top: rgba(255,255,255,0.68) 0.5px solid;
+    text-align: center;
+}
+
+@media screen and  (min-width: 537px) and (max-width: 900px) {
+    footer{
+        flex-basis: 100%;
+        height: auto;
+    }
+    .aside-container{
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        gap: 1px;
+    }
+    .aside{
+        width: 50%;
+    }
+    .aside img{
+        width: 40%;
+    }
+    .copyright{
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 537px) {
+    footer{
+        flex-basis: 100vw;
+        height: auto;
+        
+    }
+    .aside-container
+    {
+        flex-direction: column;
+        gap: 15px;
+        justify-content: none;
+    } 
+    .aside{
+        width: 100%;
+    }
+    .aside img{
+        width: 40%;
+    }
+}

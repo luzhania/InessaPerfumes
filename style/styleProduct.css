@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+}
+
+.AllProductInfo {
+    display: flex;
+    flex-basis: 100vw;
+    height: auto;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.productContainer {
+    display: flex;
+    flex-basis: 100%;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 5%;
+}
+
+.productImgContainer {
+    display: flex;
+    height: 100%;
+    flex-basis: 48%;
+    
+    justify-content: space-between;
+}
+
+.asideImgContainer {
+    display: flex;
+    flex-basis: 20%;
+    height: 100%;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.asideImgContainer img {
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.mainImgProduct {
+    display: flex;
+    height: 100%;
+    flex-basis: 78%;
+    
+}
+
+.mainImgProduct img {
+    width: 100%;
+    height: min-content;
+}
+
+.productDetailsContainer {
+    display: flex;
+    flex-basis: 48%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.priceDetails {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.orderForm {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.quantityButtonsContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.quantityButtons,
+.quantityInput {
+    display: flex;
+    width: 38px;
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+    border: #dddddd 0.1px solid;
+}
+
+.quantityButtonsContainer a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.quantityInput {
+    text-align: center;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    color: #666666;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 338px) {
+    .orderForm {
+        flex-direction: column;
+        gap:8px
+    }
+}
+
+
+.paymentCards {
+    display: flex;
+    height: auto;    
+    border: #dddddd 0.1px solid;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.paymentCards ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    justify-content: center;
+    gap:15px;
+    flex-wrap: wrap;
+}
+
+.paymentCards svg {
+    fill: #5b5b5b;
+}
+
+.paymentCards ul li {
+    width: 50px;
+    height: auto;
+}
+.checkList {
+    list-style: none;
+    padding: 0;
+}
+.checkList li svg{
+    width: 12px;
+    height: auto;
+    fill: #5b5b5b;
+}
+
+.checkList li {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: #5b5b5b;
+}
+
+button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 8px 10%;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+legend{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #5b5b5b;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .AllProductInfo {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .productContainer{
+        height: auto;
+        flex-direction: column;
+    }
+    .productImgContainer{
+        margin-bottom: 5%;
+    }
+}
+.productEspecification{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    height: auto;
+}
+
+.product-options{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+    padding: 0px;
+    border-top: #dddddd 0.1px solid;
+}
+.product-options li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+.product-options li a{
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #5b5b5b;
+    text-decoration: none;
+    /* border-top: black 0.3px solid;  */
+}
+#description{
+    display: none;
+}
+
+#description h4, #description p{
+    margin-bottom: 25px;
+}
+
+#description:target{
+    display: block;
+}
+#description:not(:target){
+    display: none;
+}
+
+.descriptionSection2{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 80vh;
+    justify-content: center;
+    padding-right: 50px;
+}
+.description-section-container{
+    display: flex;
+    flex-direction: row;
+}
+.element-inner-space{
+    width: 50%;
+}
+.descriptionSection3{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 80vh;
+    justify-content: center;
+    padding-left: 50px;
+}
+@media screen and (max-width: 767px) {
+    .descriptionSection2{
+        width: 100%;
+        height: auto;
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .descriptionSection3{
+        width: 100%;
+        height: auto;
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .element-inner-space{
+        width: 0%;
+    }
+}
+#reviews{
+    display: none;
+}
+#reviews:target{
+    display:block;
+}
+#reviews:not(:target){
+    display: none;
+}
+
+.review-form{
+    padding: 2%;
+    border: #dddddd 0.1px solid;
+}
+
+label{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #5b5b5b;
+}
+label[for="name-reviewer"]{
+    font-size: 15px;
+}
+label[for="email-reviewer"]{
+    font-size: 15px;
+}
+
+.rating-container{
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.section-form-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+textarea{
+    padding: 10px;
+    border: #dddddd 0.1px solid;
+}
+
+input{
+    padding: 10px;
+    border: #dddddd 0.1px solid;
+}
+input[type="checkbox"]{
+    margin-right: 5px;
+}
+.review-form button{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.related-products-title{
+    font-size: 68px;
+    margin-bottom: 3%;
+}
+
+@media screen and (min-width: 580px) and (max-width: 900px) {
+    .related-products-title{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 579px) {
+    .related-products-title{
+        font-size: 31px;
+    }
+}

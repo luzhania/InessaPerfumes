@@ -1,0 +1,50 @@
+/* h1, h2, h3, h4, h5, h6{
+    margin-top: 5px;
+    margin-bottom: 5px;
+} */
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Cormorant Garamond", serif;
+}
+h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+h2{
+    font-weight: 400;
+}
+h4{
+    font-size: 35px;
+    font-weight: 400;
+}
+h6{
+    font-size: 18px;
+    font-weight: 700;
+}
+.price{
+    font-size: 22.5px;
+    color: #5b5b5b;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+p{
+    font-family: "Poppins", sans-serif;
+    color: #5b5b5b;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 580px) and (max-width: 900px) {
+    h4{
+        font-size: 31px;
+    }
+    p{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 579px) {
+    p{
+        font-size: 13px;
+    }
+}
