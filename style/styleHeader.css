@@ -63,53 +63,8 @@
         padding: 8px 11px;
     }
 }
-.menu-mobile {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: #f4f4f4;
-    padding: 10px;
-    text-align: center;
-    z-index: 999;
-}
-
-
-.menu-mobile ul {
-    list-style: none;
-    padding: 0;
-}
-
-.menu-mobile ul li {
-    margin-bottom: 10px;
-}
-
-.menu-mobile ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-}
-#menu-toggle {
-    display: none;
-}
-
-#menu-toggle:checked ~ .menu-mobile {
-    display: block;
-}
-
-.overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 998;
-}
-
-#menu-toggle:checked ~ .overlay {
-    display: block;
+button{
+    background-color: black;
+    color: white;
+    border: none;
 }
