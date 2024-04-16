@@ -489,7 +489,7 @@ button {
     padding-top: 20%;
 }
 .section6-principal-image img{
-    height: 70vh;  
+    width: 50%;  
 }
 @media screen and (max-width: 767px) {
     .section6{
